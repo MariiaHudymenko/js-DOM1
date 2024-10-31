@@ -1,0 +1,92 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: rgb(234, 232, 232);
+  color: white;
+}
+
+.calc {
+  margin: 50px auto;
+  width: 400px;
+  height: 800px;
+  border-radius: 20px;
+  background-color: #2c003e;
+  color: white;
+  font-family: sans-serif;
+  padding: 18px;
+  box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#output {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 15px;
+  height: 120px;
+  padding-right: 10px;
+}
+
+#expression,
+#result {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 32px;
+}
+
+#result {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.btn {
+  flex-basis: calc(25% - 10px);
+  margin: 5px;
+  font-size: 32px;
+  height: 72px;
+  border: 0;
+  border-radius: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.light,
+.light:focus {
+  background-color: #7a1fa2;
+}
+
+.light:hover {
+  background-color: #9c4dcc;
+}
+
+.blue,
+.blue:focus {
+  background-color: #8e24aa;
+}
+
+.blue:hover {
+  background-color: #ab47bc;
+}
+
+.dark,
+.dark:focus {
+  background-color: #512da8;
+}
+
+.dark:hover {
+  background-color: #673ab7;
+}
